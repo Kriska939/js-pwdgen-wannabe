@@ -6,7 +6,7 @@
 
 //  Recupero informazioni da utente:
 
-var name = prompt('What\'s your name?', 'Cristina');
+var firstname = prompt('What\'s your name?', 'Cristina');
 var surname = prompt('What\'s your surname?', 'Corrado');
 var favoriteColor = prompt('What\'s your favorite color?', 'Lilac');
 
@@ -14,3 +14,19 @@ var favoriteColor = prompt('What\'s your favorite color?', 'Lilac');
 
 var pwEnd = '21';
 
+// Genero nuova password
+
+var specialPassword = firstname + surname + favoriteColor + pwEnd;
+
+// Scrivo pw sulla pagina
+
+var pwHere = document.getElementById('generated-pw');
+
+pwHere.innerHTML = specialPassword;
+
+// console check:
+
+/* console.log(firstname);
+ console.log(surname);
+ console.log(favoriteColor);
+ console.log(specialPassword); */
